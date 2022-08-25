@@ -2,7 +2,7 @@
 using namespace std;
 
 bool isPowerOf2(int N){
-    return N>0 && N&(N-1)==0;
+    return N>0 && (N&(N-1))==0;
 }
 
 int main(){
