@@ -1,14 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// TC : O(2^N)
+// SC : O(2^N)
 
 vector<vector<int>> getSubsets(int N, vector<int>&arr){
     vector<vector<int>> subsets;
 
+    // Generate all possible masks 
     for(int i=0; i<(1<<N); i++){
         vector<int> currSet ;
+
+        // iterate through mask
         for(int j=0; j<N; j++){
-            if((i&(1<<j))!=0){
+
+            // if is set bit then include th jth element to set
+            if((i&(1<<j)) != 0){
                 currSet.push_back(arr[j]);
             }
         }

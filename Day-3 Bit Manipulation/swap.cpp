@@ -2,9 +2,9 @@
 using namespace std;
 
 void swap(int& A, int& B){
-    A ^= B;
-    B ^= A;
-    A ^= B;
+    A ^= B; // A = A^B
+    B ^= A; // B = A^B = (A^B)^B = A 
+    A ^= B; // A = A^B = (A^B)^A = B
 }
 
 int main(){

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
+// method 1
 int countSetBits1(int N){
     int ctr= 0;
     for(int i=1; i<N; i<<=1){
@@ -12,6 +12,7 @@ int countSetBits1(int N){
     return ctr;
 }
 
+// method 2
 int countSetBits2(int N){
     int ctr = 0;
     while(N){
@@ -21,6 +22,7 @@ int countSetBits2(int N){
     return ctr;
 }
 
+// method 3
 int countSetBits3(int N){
     int ctr = 0;
     while(N){
@@ -30,6 +32,7 @@ int countSetBits3(int N){
     return ctr;
 }
 
+// method 4
 int countSetBits4(int N){
     return __builtin_popcount(N);
 }
@@ -38,9 +41,11 @@ int countSetBits4(int N){
 int main(){
     int N; 
     cin >> N;
-    cout << countSetBits1(N);
-    cout << countSetBits2(N);
-    cout << countSetBits3(N);
-    cout << countSetBits4(N);
+
+    cout << countSetBits1(N) << endl;
+    cout << countSetBits2(N) << endl;
+    cout << countSetBits3(N) << endl;
+    cout << countSetBits4(N) << endl;
+    
     return 0;
 }

@@ -2,10 +2,13 @@
 using namespace std;
 
 int _1sCompliment(int N){
+    // just flip all bits
     return ~N;
 }
+
 int _1sComplimentMSB(int N){
-    for(int i=0; N>>i ; i++){
+    // manual toggle upto MSB
+    for(int i=0; (N>>i) != 0; i++){
         N ^= 1 << i;
     }
     return N;
@@ -19,7 +22,7 @@ int main(){
     int N; 
     cin >> N;
 
-    // Toggle all the bit Not only MSB Length
+    // Toggle all the bit Not only MSB Length (1sCompliment)
     cout << _1sCompliment(N) << endl;
 
     // Toggle only until MSB
