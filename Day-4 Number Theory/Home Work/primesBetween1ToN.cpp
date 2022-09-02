@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// TC : O(N*log(log(N)))
 vector<int> getAllPrimeNumbers(int N){
     vector<int> primes;
     vector<bool> isPrime(N+1, true);
