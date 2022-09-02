@@ -1,0 +1,24 @@
+
+Mode Arithmetic:
+------------------
+1) (a+b) % M = (a%M + b%M ) % M
+2) (a-b) % M = (a%M - b%M) % M      (for Negative cycle)
+3) (a-b) % M = (a%M - b%M + M) %M       (for Positive cycle)
+4) (a*b) % M = (a%M * b%M) %M 
+5) (a/b) % M Not applicable
+
+why Mod 10^9+7 ?
+------------------
+    -> One of the largest prime which fit in int
+    -> Easy to remember 
+    -> prime numbers will not collide (Unique remainders)
+
+catalan number problems
+-------------------------
+1) Number of Valide paranthesis 
+2) Number of Valide paranthesis with values
+3) Number of valid full binary tree
+4) Number of structuraly Unique BSTs
+5) Number of Non-intersecting chords
+6) All Possible binary tree in given inorder traversal
+7) Number of way to reach the end without crossing diagnol 
