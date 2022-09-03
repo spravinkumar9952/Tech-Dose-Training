@@ -15,8 +15,8 @@ why Mod 10^9+7 ?
 
 catalan number problems
 -------------------------
-1) Number of Valide paranthesis 
-2) Number of Valide paranthesis with values
+1) Number of valid paranthesis 
+2) Number of valid paranthesis with values
 3) Number of valid full binary tree
 4) Number of structuraly Unique BSTs
 5) Number of Non-intersecting chords
