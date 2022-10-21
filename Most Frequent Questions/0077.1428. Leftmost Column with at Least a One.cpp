@@ -1,0 +1,1 @@
+https://medium.com/@sumukhballal/leftmost-column-with-at-least-a-one-problem-leetcode-57361bb66bf6
