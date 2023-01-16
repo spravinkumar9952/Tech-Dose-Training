@@ -101,7 +101,7 @@ int main(){
 
     for(int i : arr)
         hp.push(i);
-    // hp.buildHeap(arr);
+        
     // hp.push(9);
     // hp.push(3);
     // hp.push(7);
